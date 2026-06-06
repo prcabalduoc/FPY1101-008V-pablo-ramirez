@@ -40,7 +40,7 @@ while True:
                     print(f"¡No hay suficientes libros disponibles! Solo hay {stockLibros} libros en stock.")
                 else:
                     stockLibros -= numPrestamo
-                    historialPrestamos += 1
+                    historialPrestamos += numPrestamo
                     print(f"¡Préstamo realizado con éxito! Quedan {stockLibros} libros disponibles en la biblioteca.")
 
             elif opcion == 3:
@@ -58,7 +58,7 @@ while True:
                     print(f"¡Error! No se pueden devolver más de {maxLibros - stockLibros} libros, ya que el stock máximo es de {maxLibros}.")
                 else:
                     stockLibros += numDevolucion
-                    historialPrestamos -= 1
+                    historialPrestamos -= numDevolucion
                     print(f"¡Devolución realizada con éxito! Ahora hay {stockLibros} libros disponibles en la biblioteca.")
 
             elif opcion == 4:
@@ -69,6 +69,6 @@ while True:
             elif opcion == 5:
                 print("\n¡Gracias por usar el sistema de biblioteca! ¡Hasta luego!\n")
                 break
-            
+
     except ValueError:
         print("Error: Por favor, ingrese un número entero válido para seleccionar una opción.")
