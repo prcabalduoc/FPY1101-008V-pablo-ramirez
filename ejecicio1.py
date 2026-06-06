@@ -1,4 +1,4 @@
-print("\n===[Bienvenidos al Sistema Médico]===")
+print("\n===[ Bienvenidos al Sistema Médico ]===")
 
 #Ingresar total de médicos
 while True:
@@ -40,7 +40,7 @@ for i in range(totalMedicos):
         except ValueError:
             print("Error: Por favor, ingrese un número mayor a 0.")
 
-print("\n===[Resultados del Registro Médico]===")
+print("\n===[ Resultados del Registro Médico ]===")
 print("¡El hospital cuenta con:")
 print(f"Residentes Junior: {medResidentes}")
 print(f"Especialistas Senior: {medEspecialistas}")
